@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #34495e;
+            margin-top: 1rem;
+        }
+        .link{
+            font-size: 1.4rem;
+            color: #34495e;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+        
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        ul li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rohit Kumar</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills & Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Rohit Kumar, a passionate MCA student at Pimpri Chinchwad College of Engineering, Pune. With a strong foundation in full-stack web development, I specialize in technologies like Python, Django, HTML, CSS, and JavaScript. My experience as a Web Developer Intern at South Bihar Power Distribution and Co. Ltd. has honed my skills in building practical solutions like an Electricity Billing System. I am driven by a curiosity for technology and a commitment to creating user-friendly applications. Beyond coding, I enjoy playing kabaddi, participating in book reviews, and contributing to my college's Training and Placement Cell.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Interests</h2>
+        <h3>Skills</h3>
+        <ul>
+            <li>Python, Django, SQL</li>
+            <li>HTML, CSS, JavaScript, Bootstrap</li>
+            <li>Java, C, C++, Git, GitHub</li>
+        </ul>
+        <h3>Interests</h3>
+        <ul>
+            <li>Full-stack Web Development</li>
+            <li>Competitive Programming</li>
+            <li>Kabaddi and Reading</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3> <a href="https://carrerhub.pythonanywhere.com" class="link">CarrerHub - Job Portal</a></h3>
+            <p>
+                A full-stack job portal built with Django, HTML/CSS, JavaScript, and SQLite. It enables job seekers to search, filter, and apply for jobs, while recruiters can post and manage listings. Features include user authentication, dynamic dashboards, job tracking, and email notifications.
+            </p>
+        </div>
+        <div class="project">
+            <h3> <a href="https://quickcare.pythonanywhere.com" class="link">QuickCare - Hospital Appointment Booking System</a></h3>
+            <p>
+                A centralized hospital appointment booking system with full-stack capabilities. Patients can book and manage appointments across multiple hospitals, while admins handle scheduling. The project focuses on real-time data handling, user roles, and smooth UI/UX integration.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:Rohitkumarara гарантии 2004@gmail.com">rohitkumarara2004@gmail.com</a></p>
+        <p class="contact-links">
+            <a href="https://github.com/rayrohit999" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/rohit-kumar-9987801bb" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohit Kumar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
